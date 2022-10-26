@@ -1,0 +1,125 @@
+﻿--Gabriel Opusky
+
+
+--read4donate:
+
+
+
+
+--Gabriel Opusky
+
+
+
+
+--tables
+
+
+
+
+Create table usuario(
+
+
+    Id_usuario number constraint pk_usuario primary key,
+        nome_usuario varchar2(50),
+            Nascimento_usuario varchar2(50)
+);
+
+
+
+
+Create table livro(
+
+
+ Id_livro number constraint pk_livro primary key,
+    vol_livro number,
+         categoria_livro varchar2(50),
+                nome_livro varchar2(50)
+);
+
+
+Create table troca_livro(
+
+
+Id_troca_livro number constraint pk_troca_livro primary key,
+    Id_livro number,
+        Id_usuario number
+);
+
+
+Create table Doa_livro(
+
+
+Id_Doa_livro number constraint pk_Doa_livro primary key,
+    Id_livro number,
+        Id_usuario number
+);
+
+
+
+
+--Create table Busca(
+
+
+--Id_busca number constraint pk_busca primary key,
+ --   Id_livro number,
+   --     Id_usuario number
+--);
+
+
+-- como dá para fazer a busca do banco de dados pelo banco 
+--não sei dizer se é necessário a tabela de busca após fazer de doação e troca
+
+
+--alter table
+
+
+
+
+alter table troca_livro add constraint fk_troca__usuario foreign key 
+(Id_usuario) references usuario;
+
+
+alter table troca_livro add constraint fk_troca__livro foreign key 
+(Id_livro) references livro;
+
+
+alter table Doa_livro add constraint fk_Doa__usuario foreign key 
+(Id_usuario) references usuario;
+
+
+alter table Doa_livro add constraint fk_Doa__livro foreign key 
+(Id_livro) references livro;
+
+
+alter table busca add constraint fk_busca_usuario foreign key 
+(id_usuario) references usuario;
+
+
+
+
+alter table busca add constraint fk_busca_livro foreign key 
+(id_livro) references livro;
+
+
+
+
+--sequence
+
+
+
+
+create sequence s_usuario start with 100 nocache;
+
+
+create sequence s_livro start with 200 nocache;
+
+
+create sequence s_troca start with 300 nocache;
+
+
+create sequence s_doa start with 400 nocache;
+
+
+
+
+create sequence s_busca start with 500 nocache;

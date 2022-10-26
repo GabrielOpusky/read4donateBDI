@@ -1,0 +1,90 @@
+﻿–gabriel opusky
+–read4donate
+-- inserts
+
+
+insert into usuario(id_usuario,nome_usuario, nascimento_usuario) 
+values(s_usuario.nextval, 'Joao portugues','1999');
+
+
+insert into usuario(id_usuario,nome_usuario, nascimento_usuario) 
+values(s_usuario.nextval, 'pedro silva','1997');
+
+
+insert into usuario(id_usuario,nome_usuario, nascimento_usuario) 
+values(s_usuario.nextval, 'Jorge folgaça','2005');
+
+
+
+
+insert into usuario(id_usuario,nome_usuario, nascimento_usuario) 
+values(s_usuario.nextval, 'miguel soarez','2005');
+
+
+
+
+insert into usuario(id_usuario,nome_usuario, nascimento_usuario) 
+values(s_usuario.nextval, 'felipe mendonha','2005');
+—------------------------------------------------------------------------------------
+insert into livro(id_livro,vol_livro,categoria_livro,nome_livro)
+values(s_livro.nextval, 1,'Fabula', 'O pequeno principe');
+
+
+insert into livro(id_livro,vol_livro,categoria_livro,nome_livro)
+values(s_livro.nextval, 1,'Fabula', 'A cigarra e a formiga');
+
+
+insert into livro(id_livro,vol_livro,categoria_livro,nome_livro)
+values(s_livro.nextval, 3,'Didático', 'Ciência e suas Aplicações');
+
+
+insert into livro(id_livro,vol_livro,categoria_livro,nome_livro)
+values(s_livro.nextval, 1,'Didático', 'Ciência e suas Aplicações');
+
+
+insert into livro(id_livro,vol_livro,categoria_livro,nome_livro)
+values(s_livro.nextval, 5,'Aventura', 'Percy Jackson e os olimpianos');
+
+
+--------------------------------------------------------------------------------
+
+
+insert into troca_livro(id_troca_livro,id_livro,id_usuario)
+values(s_troca.nextval,200,100);
+
+
+insert into troca_livro(id_troca_livro,id_livro,id_usuario)
+values(s_troca.nextval,201,101);
+
+
+insert into troca_livro(id_troca_livro,id_livro,id_usuario)
+values(s_troca.nextval,202,102);
+
+
+insert into troca_livro(id_troca_livro,id_livro,id_usuario)
+values(s_troca.nextval,203,103);
+
+
+insert into troca_livro(id_troca_livro,id_livro,id_usuario)
+values(s_troca.nextval,204,104);
+
+
+--------------------------------------------------------------------------------
+insert into Doa_livro(id_doa_livro,id_livro,id_usuario)
+values(s_doa.nextval,200,100);
+
+
+insert into Doa_livro(id_doa_livro,id_livro,id_usuario)
+values(s_doa.nextval,201,101);
+
+
+insert into Doa_livro(id_doa_livro,id_livro,id_usuario)
+values(s_doa.nextval,202,102);
+
+
+insert into Doa_livro(id_doa_livro,id_livro,id_usuario)
+values(s_doa.nextval,203,103);
+
+
+insert into Doa_livro(id_doa_livro,id_livro,id_usuario)
+values(s_doa.nextval,204,104);

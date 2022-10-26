@@ -1,0 +1,13 @@
+﻿--selects 
+
+
+--se eu quiser ver o nome dos livros em asc(ORDEM CRESCENTE):
+
+
+SELECT * FROM livro ORDER BY nome_livro ASC;
+
+
+--se eu quiser ver o nome dos livros em DESC(ORDEM DECRESCENTE):
+
+
+SELECT * FROM livro ORDER BY nome_livro DESC;
